@@ -30,10 +30,12 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js
-        run: npx next build
+        run: npm run build
 
       - name: Check
-        run: ls
+        run: ls -a
+      - name: Check next
+        run: ls -a .next
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
