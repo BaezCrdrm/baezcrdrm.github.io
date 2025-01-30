@@ -1,0 +1,22 @@
+.prompt {
+    /* animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite; */
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in; */
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
